@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="jp" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Saifu / Error</title>
+</head>
+<body>
+<h1 th:text="${status} + ' ' + ${error}">500 Internal Server Error</h1>
+<h3 th:text="${exception}">Error detail</h3>
+
+<p><a th:href="@{/}">トップページに戻る</a></p>
+</body>
+</html>
